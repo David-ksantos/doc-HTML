@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <meta name="description" content="tables and lines">
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+        border-collapse: collapse;
+        width: 100%;
+        
+        }
+
+        td, th{
+        border: 1px groove rgba(0, 0, 0, 0.377);
+        padding: 5px;
+        text-align: left;
+        }
+        caption{
+            caption-side: top;
+            font-size: 20px;
+            font-style: italic;
+            text-align: left;
+        }
+        tfoot, thead{
+            background-color: rgba(8, 8, 216, 0.781);
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption>Título da tabela</caption>
+        <thead>
+        <tr>
+           <th>Header1</th>
+           <th>Header2</th>
+           <th>Header3</th>
+        </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>body1</td>
+                <td>body2</td>
+                <td>body3</td>
+            </tr>
+            <tr>
+                <td colspan="2">body1</td>
+                <td>body2</td>
+                
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>foot</td>
+                <td>foot</td>
+                <td>foot</td>
+            </tr>
+        </tfoot>
+     </table>
+       
+
+</body>
+</html>
