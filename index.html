@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="shortcut icon" href="luz.jpg" type="image/x-icon">
+    <style>
+
+        #div1{
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.363);
+            margin-right: 500px;
+            margin-left: 500px;
+            margin-top: 200px;
+            height: 300px;
+            padding-top: 20px;
+            border: solid black;
+            box-shadow: rgba(0, 0, 0, 0.39) 5px 5px 5px;
+            border-radius: 10%;
+        }
+        h1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-shadow:rgba(255, 255, 255, 0.212);
+        }
+        h2{
+            color: aliceblue;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            
+        }
+
+        body{
+            background-color: rgba(0, 0, 0, 0.781);
+
+        }
+
+    </style>
+</head>
+<body>
+
+  <section id="div1">
+    <div>
+        <h1><strong>Login</strong></h1>
+        <h2>nome</h2>
+        <input type="text" name="Nome" id="r1" placeholder="digite o seu nome">
+        <h2>senha</h2>
+        <input type="text" name="idade" id="r2" placeholder="digite sua senha">
+        <br>
+        <input type="button" value="logar" style="margin-top: 30px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; width: 80px; 
+        box-shadow: rgba(0, 0, 0, 0.466) 5px 5px 5px;" onclick="logou()" id="bot" onmouseenter="on()" onmouseleave="off()">
+    </div>
+</section>
+
+  <script>
+    var r1 = document.querySelector("input#r1")
+    var r2 = document.querySelector("input#r2")
+    var bot = document.querySelector("input#bot")
+    function logou(){
+        
+        
+            var nome = r1.value
+            window.alert(`Olá ${nome}, você esta logado`)
+     
+        
+    }
+    addEventListener()
+
+    function on(){
+        bot.style.backgroundColor = "#0087"
+    }
+    function off(){
+        bot.style.backgroundColor = "white"
+    }
+  </script>
+</body>
+</html>
