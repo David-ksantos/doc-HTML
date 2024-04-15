@@ -9,6 +9,7 @@
             margin: 0;
             padding: 0;
         }
+        
         #divfora{
             background-color: black;
             height: 600px;
@@ -19,10 +20,19 @@
             display: flex;
             
         }
-        #div2{
+        #divfora2{
             height: 600px;
+            display: flex;
         }
-        #div3{
+        #about2{
+            width: 800px;
+            height: auto;
+        }
+        #div2{
+            display: flex;
+            align-items: center;
+        }
+        #divfora3{
             height: 600px;
             background-color: rgba(0, 0, 0, 0.295);
             box-shadow: rgb(0, 0, 0, 0.4) 5px 5px 5px ;
@@ -61,6 +71,15 @@
             text-align: center;
             margin-top: 20px;
         }
+        #tbosco{
+            color: black;
+            font-size: 70px;
+        }
+        #corsa{
+            margin: 30px;
+            box-shadow: rgba(0, 0, 0, 0.452) 5px 5px 5px;
+            border-radius: 5%;
+        }
     </style>
 </head>
 
@@ -80,22 +99,47 @@
         </div>
         <footer><a href="#">@aboutsupra</a></footer>
     </div>
-    <div id="div2"></div>
-    <div id="div3"></div>
+    <div id="divfora2">
+        <div id="about2">
+            <header style="width: 600px;">
+                <h1 id="tbosco">CORSA d' BOSCO</h1>
+            </header>
+            <p style="color: black; margin-top: 40px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sapiente saepe aut optio nemo quas possimus ipsa, doloribus, quasi in dolorem, 
+                commodi est animi incidunt maiores laudantium molestias aperiam ad harum.</p>
+            <footer><a href="#" style="color: black;">@aboutcorsa</a></footer>
+        </div>
+        <div id="div2">
+            <img id="corsa" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Chevrolet_Corsa_1.6_Sedan_2009.jpg" alt="corsinha">
+        </div>
+    </div>
+    
+    
+    <div id="divfora3"></div>
 
 
     <script>
-        const carro = document.querySelector("img#supra") 
-        carro.addEventListener('mouseenter', entrou)
-        carro.addEventListener('mouseout', saiu)
+        const carro1 = document.querySelector("img#supra")
+        const carro2 = document.querySelector("img#corsa")  
+        carro1.addEventListener('mouseenter', entrou)
+        carro1.addEventListener('mouseout', saiu)
+        carro2.addEventListener('mouseenter' ,cor)
+        carro2.addEventListener('mouseout', cor2)
+
+        function cor(){
+            carro2.style.border = "groove black 2px"
+        }
+        function cor2(){
+            carro2.style.border= 'none'
+        }
 
         function entrou(){
-            carro.style.width = "430px"
-            carro.style.height = "320px"
+            carro1.style.width = "430px"
+            carro1.style.height = "320px"
         }
         function saiu(){
-            carro.style.width = "400px"
-            carro.style.height = "300px"
+            carro1.style.width = "400px"
+            carro1.style.height = "300px"
         }
     </script>
 </body>
